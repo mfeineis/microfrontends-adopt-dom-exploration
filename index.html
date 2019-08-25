@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+    <title>Micro Frontends Orchestrator Playground</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" type="text/css">
+    <script id="site-config" type="application/json">
+        {
+            "routes": [
+                { "route": "/login", "entry": "/cdn/login/index.html" },
+                { "route": "/", "entry": "/cdn/home/index.html" }
+            ],
+            "session": "/api/session.json"
+        }
+    </script>
+    <script async src="src/core.js"></script>
+</head>
+
+<body>
+    <pre>LOADING...</pre>
+</body>
+
+</html>
